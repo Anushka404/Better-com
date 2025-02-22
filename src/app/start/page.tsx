@@ -17,7 +17,7 @@ const page = () => {
         </div>
 
         
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 hover:cursor-pointer">
           <FaPhone className="text-green-600 text-lg" />
           <span className="text-sm font-medium">Need help? Call (415) 523 8837</span>
         </div>
@@ -41,7 +41,7 @@ const page = () => {
       </div>
     </header>
       {/* Main Section */}
-      <section className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container">
+      <section className="flex justify-between items-center max-lg:flex-col gap-10 py-7 w-full max-container">
         <div className="flex flex-1 flex-col items-center justify-center gap-10">
           <h1 className="mt-10 text-4xl text-center font-bold text-black lg:max-w-lg">
             Hi, I'm Betsy! <br />
@@ -69,11 +69,11 @@ const page = () => {
           {/* Stats */}
           <div className="mt-12 flex flex-col sm:flex-row gap-8 text-center">
             <div>
-              <h3 className="text-4xl font-semibold">$100B</h3>
+              <h3 className="text-4xl font-bold">$100B</h3>
               <p className="text-gray-600 py-2">home loans funded entirely online</p>
             </div>
             <div>
-              <h3 className="text-4xl font-semibold">400K</h3>
+              <h3 className="text-4xl font-bold">400K</h3>
               <p className="text-gray-600 py-2">Customers who chose a Better Mortgage</p>
             </div>
           </div>

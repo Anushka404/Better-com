@@ -129,6 +129,48 @@ const AboutPage = () => {
         </div>
       </div>
 
+       {/* 2017 - Right */}
+       <div className="flex items-center w-full">
+        <div className="w-1/2 flex justify-end">
+          <div className="bg-green-700 text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">2017</div>
+        </div>
+        <div className="w-1/2 pl-8 flex justify-start">
+          <div className="bg-gray-200 p-6 rounded-lg">
+            <p className="text-gray-700 leading-relaxed">
+            Better expands into the real estate market with Better Real Estate.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* 2018 - Left */}
+      <div className="flex items-center w-full">
+        <div className="w-1/2 pr-8 flex justify-end">
+          <div className="bg-gray-200 p-6 rounded-lg">
+            <p className="text-gray-700 leading-relaxed">
+            Better Mortgage partners with Ally Bank to build Ally powered by Better.
+            </p>
+          </div>
+        </div>
+        <div className="w-1/2 flex justify-start">
+          <div className="bg-green-700 text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">2018</div>
+        </div>
+      </div>
+
+      {/* 2019 - Right */}
+      <div className="flex items-center w-full">
+        <div className="w-1/2 flex justify-end">
+          <div className="bg-green-700 text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">2019</div>
+        </div>
+        <div className="w-1/2 pl-8 flex justify-start">
+          <div className="bg-gray-200 p-6 rounded-lg">
+            <p className="text-gray-700 leading-relaxed">
+            Better Mortgage launches its pilot partnership with American Express to deliver a seamless homebuying experience to AMEX customers.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

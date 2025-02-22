@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import FiPhone from "@/assets/phone-white.png";
+import FiPhone from "@/assets/call.png";
+import greenPhone from "@/assets/call-green.png";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -47,25 +48,34 @@ const Header = () => {
               isScrolled ? "text-[#004733]" : "text-white"
             }`}
           >
-            <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>Buy</li>
+            <Link href={"/start"}>
+            <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>Buy</li></Link>
             <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>Refinance</li>
             <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>HELOC</li>
-            <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>Rates</li>
-            <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>Better+</li>
+            <Link href={"/mortgageCalc"}>
+            <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>Rates</li></Link>
+            <Link href={"/About"}>
+            <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>About Us</li>
+            </Link>
           </ul>
         </nav>
 
-        {/* Right Section - Call & Sign In */}
+        {/* Call & Sign In */}
         <div className="flex items-center space-x-4">
           {/* Phone Button */}
           <button
-            className={`w-10 h-10 flex items-center justify-center border-2 rounded-full transition-all duration-300 ${
+            className={`w-11 h-11 flex items-center justify-center border-2 rounded-full transition-all duration-300 ${
               isScrolled
-                ? "border-[#004733] text-[#004733] hover:bg-[#004733] hover:text-white"
-                : "border-gray-50 text-white hover:bg-white hover:text-[#004733]"
+                ? "border-[#004733] text-[#004733] hover:bg-[#bad3cc] hover:text-white"
+                : "border-gray-50 text-white hover:bg-gray-500 hover:text-[#004733]"
             }`}
           >
-            <Image src={FiPhone} alt="Phone Icon" height={25} />
+            <Image
+              src={isScrolled ? greenPhone : FiPhone}
+              alt="Phone Icon"
+              height={25}
+              width={25} 
+  />
           </button>
 
           {/* Sign-in Button */}
