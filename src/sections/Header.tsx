@@ -53,7 +53,7 @@ const Header = () => {
             <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>Refinance</li>
             <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>HELOC</li>
             <Link href={"/mortgageCalc"}>
-            <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>Rates</li></Link>
+            <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>Mortgage Calculator</li></Link>
             <Link href={"/About"}>
             <li className={`btn-theme hover:cursor-pointer ${isScrolled ? "text-[#004733]" : "text-white"}`}>About Us</li>
             </Link>

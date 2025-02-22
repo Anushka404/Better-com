@@ -1,8 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
-import Eren from '@/assets/Eren.jpg';
+import Eren from '@/assets/vishal-mission.jpg';
 import Header from '@/sections/Header';
 import Footer from '@/sections/Footer';
+import Link from 'next/link';
+
+import ally from "@/assets/ally.png";
+import softBank from "@/assets/soft.png";
+import citi from "@/assets/citi.png";
+import goldman from "@/assets/goldman.png";
+import kpcb from "@/assets/KPCB-logo.webp";
+import ping from "@/assets/ping.png";
+import AE from "@/assets/american.png";
 
 const AboutPage = () => {
   return (
@@ -36,7 +45,8 @@ const AboutPage = () => {
         {/* Right Side - Image with Video Button */}
         <div className="md:w-1/2">
           <div className="relative">
-            <Image src={Eren} alt="Vishal Garg" className="rounded-lg shadow-md h-72 object-cover w-full" />
+            <Link href="https://www.youtube.com/watch?v=1KjYlLBM9j4&t=1s">
+            <Image src={Eren} alt="Vishal Garg" className="rounded-lg shadow-md h-80 object-cover w-full" />
             <button className="absolute inset-0 flex items-center justify-center">
               <span className="bg-white p-4 rounded-full shadow-lg">
                 <svg className="w-10 h-10 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
@@ -44,34 +54,53 @@ const AboutPage = () => {
                 </svg>
               </span>
             </button>
+            </Link>
           </div>
         </div>
+        
       </section>
-      <section className="bg-accentPrimary text-white py-12 px-6 md:px-12 flex justify-center h-[300px]">
-        <div className="max-w-4xl w-full ">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">How we’re changing things</h2>
-          <p className=" mb-4">
-            Homeownership is a huge part of our economy. Housing overall is a $33 trillion business, and mortgages account for $15 trillion.
-            Yet home finance operates in the same way it has for decades — through opaque systems and expensive intermediaries whose interests are misaligned with consumers’.
-          </p>
-          <p className="">
-            That’s why Better.com is redefining the homeownership process from the ground up. We’re using technology to make it faster and more
-            efficient, and humans to help make it friendly and enjoyable.
-          </p>
+      <section className="mt-28 mb-20 pb-12 bg-[#00824A] text-white py-12 px-6 md:px-12 flex justify-center">
+      <div className="max-w-4xl w-full">
+      <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      How we’re changing things
+      </h2>
+      <p className="mb-4">
+      Homeownership is a huge part of our economy. Housing overall is a $33 trillion business, and mortgages account for $15 trillion.
+      Yet home finance operates in the same way it has for decades — through opaque systems and expensive intermediaries whose interests are misaligned with consumers’.
+      </p>
+      <p>
+      That’s why Better.com is redefining the homeownership process from the ground up. We’re using technology to make it faster and more
+      efficient, and humans to help make it friendly and enjoyable.
+      </p>
+      </div>
+      </section>
+
+      <section className="sm:py-44 bg-background h-[400px] flex flex-col justify-center items-center py-20">
+      <h2 className="text-2xl font-medium text-center mb-10">Backed by</h2>
+      <div className="flex flex-wrap justify-center gap-10 px-6 max-w-6xl">
+        <div className="flex items-center">
+          <Image src={softBank} alt="SoftBank" width={120} height={48} className="object-contain" />
         </div>
-      </section>
-      <section className="bg-background h-[400px] flex flex-col justify-center items-center py-20">
-        <h2 className="text-2xl font-medium text-center mb-10">Backed by</h2>
-        <div className="flex flex-wrap justify-center gap-10 px-6 max-w-6xl">
-          <img src="/logos/softbank.png" alt="SoftBank" className="h-12" />
-          <img src="/logos/ally.png" alt="Ally" className="h-12" />
-          <img src="/logos/citi.png" alt="Citi" className="h-12" />
-          <img src="/logos/pingan.png" alt="Ping An Bank" className="h-12" />
-          <img src="/logos/goldman.png" alt="Goldman Sachs" className="h-12" />
-          <img src="/logos/kpcb.png" alt="KPCB" className="h-12" />
-          <img src="/logos/amex.png" alt="American Express" className="h-12" />
+        <div className="flex items-center">
+          <Image src={ally} alt="Ally" width={80} height={48} className="object-contain" />
         </div>
-      </section>
+        <div className="flex items-center">
+          <Image src={citi} alt="Citi" width={80} height={48} className="object-contain" />
+        </div>
+        <div className="flex items-center">
+          <Image src={ping} alt="Ping An Bank" width={120} height={48} className="object-contain" />
+        </div>
+        <div className="flex items-center">
+          <Image src={goldman} alt="Goldman Sachs" width={120} height={48} className="object-contain" />
+        </div>
+        <div className="flex items-center">
+          <Image src={kpcb} alt="KPCB" width={120} height={48} className="object-contain" />
+        </div>
+        <div className="flex items-center">
+          <Image src={AE} alt="American Express" width={120} height={48} className="object-contain" />
+        </div>
+      </div>
+    </section>
 
 
 
@@ -167,6 +196,94 @@ const AboutPage = () => {
             <p className="text-gray-700 leading-relaxed">
             Better Mortgage launches its pilot partnership with American Express to deliver a seamless homebuying experience to AMEX customers.
             </p>
+          </div>
+        </div>
+      </div>
+
+       {/* 2021 - Left */}
+       <div className="flex items-center w-full">
+        <div className="w-1/2 pr-8 flex justify-end">
+          <div className="bg-gray-200 p-6 rounded-lg">
+            <p className="text-gray-700 leading-relaxed">
+            Better acquires Trussle — The UK’s most innovative online mortgage broker.
+            </p>
+          </div>
+        </div>
+        <div className="w-1/2 flex justify-start">
+          <div className="bg-green-700 text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">2021</div>
+        </div>
+      </div>
+
+      {/* 2022 - Right */}
+      <div className="flex items-center w-full">
+        <div className="w-1/2 flex justify-end">
+          <div className="bg-green-700 text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">2022</div>
+        </div>
+        <div className="w-1/2 pl-8 flex justify-start">
+          <div className="bg-gray-200 p-6 rounded-lg">
+            <p className="text-gray-700 leading-relaxed">
+            Better Mortgage becomes the first fintech to fund $100B home loans entirely online.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* 2023 - Left */}
+      <div className="flex items-center w-full">
+        <div className="w-1/2 pr-8 flex justify-end">
+          <div className="bg-gray-200 p-6 rounded-lg">
+            <p className="text-gray-700 leading-relaxed">
+            Better Mortgage launches One Day Mortgage¹: The first offering to customers to go from application to full mortgage Commitment Letter within 24 hours vs. typical industry process of 30+ days.
+            </p>
+          </div>
+        </div>
+        <div className="w-1/2 flex justify-start">
+          <div className="bg-green-700 text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">2023</div>
+        </div>
+      </div>
+      {/* Right */}
+       <div className="flex items-center w-full">
+        <div className="w-1/2 flex justify-end">
+          
+        </div>
+        <div className="w-1/2 pl-8 flex justify-start">
+          <div className="bg-gray-200 p-6 rounded-lg">
+            <p className="text-gray-700 leading-relaxed">
+            Better Mortgage launches the fully digital 3-day HELOC².
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* Left */}
+      <div className="flex items-center w-full">
+        <div className="w-1/2 pr-8 flex justify-end">
+          <div className="bg-gray-200 p-6 rounded-lg">
+            <p className="text-gray-700 leading-relaxed">
+            Better Mortgage launches One Day Verified Approval Letter.
+            </p>
+          </div>
+        </div>
+        <div className="w-1/2 flex justify-start">  
+        </div>
+      </div>
+
+      {/* Today */}
+      <div className="flex items-center w-full">
+        <div className="w-1/2 flex justify-end">
+          <div className="bg-green-700 text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">Today</div>
+        </div>
+        <div className="w-1/2 pl-8 flex justify-start">
+          <div className="bg-gray-200 p-6 rounded-lg">
+            <p className="text-gray-700 leading-relaxed">
+            You become part of the story by joining tens of thousands of happy Better Mortgage borrowers.
+            </p>
+            <Link href={"/start"}>
+            <button className="mt-3 bg-green-700 text-white  px-5 py-2 font-medium  rounded-xl text-lg
+             shadow-lg hover:bg-green-600 transition-all duration-300
+            ">
+              Get Started
+            </button>
+          </Link>
           </div>
         </div>
       </div>

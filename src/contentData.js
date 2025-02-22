@@ -1,4 +1,11 @@
 // contentData.js
+import oneDay from "@/assets/one dat.png"
+import heloc from "@/assets/better-heloc.webp"
+import house from "@/assets/buy-house-without-realtor.webp"
+import loanTime from "@/assets/loan-timeline.webp"
+import afordCalc from "@/assets/affordability-calculator.webp"
+import helocCalc from "@/assets/heloc-calculator.webp"
+
 const content = {
     products: [
       {
@@ -12,7 +19,7 @@ const content = {
         title: "One Day Mortgage",
         description:
           "Kick your home loan into hyperdrive. Going from locked rate to Commitment Letter takes weeks for traditional lenders. We do it in a single day.",
-        img: "https://via.placeholder.com/150",
+        img: oneDay,
         alt: "One Day Mortgage",
         type: "wide",
       },
@@ -20,7 +27,7 @@ const content = {
         title: "Better HELOC",
         description:
           "Introducing One Day HELOC™—your express lane to getting cash from your home with our Home Equity Line of Credit². Access up to 90% of your home equity as cash in as little as 7 days.",
-        img: "https://via.placeholder.com/400",
+        img: heloc,
         alt: "HELOC",
         type: "wide",
       },
@@ -45,7 +52,7 @@ const content = {
         title: "Home Affordability Calculator",
         description:
           "Find out how much home you can afford based on your income, debts, and savings.",
-        img: "https://via.placeholder.com/150",
+        img: afordCalc,
         alt: "Affordability Calculator",
         type: "wide",
       },
@@ -53,7 +60,7 @@ const content = {
         title: "Refinance Calculator",
         description:
           "See how much you can save by refinancing your mortgage with Better.",
-        img: "https://via.placeholder.com/400",
+        img: helocCalc,
         alt: "Refinance Calculator",
         type: "wide",
       },
@@ -67,27 +74,27 @@ const content = {
     ],
     guides: [
       {
-        title: "Home Buying Guide",
+        title: "What is a Good DTI ratio for a home loan?",
         description:
-          "Step-by-step guide to help you navigate the home buying process.",
+          "",
         img: "https://media.better.com/better-com/homepage/learning-center/good-dti.webp",
         alt: "Home Buying Guide",
         type: "small",
       },
       {
-        title: "First-Time Homebuyer Tips",
+        title: "Buying a Home Without a Realtor",
         description:
-          "Everything you need to know before buying your first home.",
-        img: "https://via.placeholder.com/150",
+          "Thinking about buying a home without a realtor? Here's what you need to know.",
+        img: house,
         alt: "First-Time Homebuyer",
         type: "wide",
       },
       {
-        title: "Credit Score Improvement",
+        title: "Timeline for homebuying process",
         description:
-          "Learn how to improve your credit score to qualify for better mortgage rates.",
-        img: "https://via.placeholder.com/400",
-        alt: "Credit Score",
+          "Does the process of buying a home seem daunting? Here's a timeline to help you navigate the process.",
+        img: loanTime,
+        alt: "loan timeline",
         type: "wide",
       },
       {

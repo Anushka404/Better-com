@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image"; // ✅ Import Next.js Image component
 import content from "@/contentData"; // Importing the content array
 
 const Question = () => {
@@ -38,7 +39,7 @@ const Question = () => {
         </div>
 
         {/* Bento Boxes Container */}
-        <div className=" bg-green-50 mt-10 grid gap-6 md:grid-cols-3 auto-rows-fr min-h-[250px]">
+        <div className="bg-green-50 mt-10 grid gap-6 md:grid-cols-3 auto-rows-fr min-h-[250px]">
           {content[activeTab].map((item, index) => (
             <div
               key={index}
@@ -61,11 +62,31 @@ const Question = () => {
               <button className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:bg-gray-200 transition">
                 ➝
               </button>
-              <img
-                src={item.img}
-                alt={item.alt}
-                className="rounded-md w-full mt-auto"
-              />
+
+              {/* ✅ Dynamically set image sizes based on item type */}
+              <div
+                className={`flex ${
+                  item.type === "wide" ? "justify-end items-end" : ""
+                } w-full`}
+              >
+              {typeof item.img === "string" ? (
+                <img
+                  src={item.img}
+                  alt={item.alt}
+                  className={`rounded-md mt-auto ${
+                    item.type === "wide" ? "w-[600px] h-[200px]" : "w-[800px] h-[200px]"
+                  } object-cover`}
+                />
+              ) : (
+                <Image
+                  src={item.img}
+                  alt={item.alt}
+                  width={item.type === "wide" ? 300 : 300} // Square: 400x400, Rectangular: 300x200
+                  height={item.type === "wide" ? 200 : 200}
+                  className="rounded-md mt-auto object-cover"
+                />
+              )}
+              </div>
             </div>
           ))}
         </div>

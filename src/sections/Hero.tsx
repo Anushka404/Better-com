@@ -10,29 +10,40 @@ const Hero = () => {
       style={{
         backgroundImage: `url(${Phone.src})`,
         backgroundSize: "auto 90%",
-        backgroundPosition: "center bottom -50px", 
+        backgroundPosition: "center bottom -90px", 
         backgroundRepeat: "no-repeat",
         height: "100vh",
       }}
     >
-      <div className="max-w-screen-lg absolute top-1/4 transform -translate-y-1/4">
-        <h1 className="text-7xl md:text-7xl font-bold text-green-400 leading-tight">
-          Mortgages <br /> made simple
-        </h1>
-        
-      </div>
-      <div className="mr-[600px]">
-      <div className="py-4 mt-6 flex justify-center">
+    <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4 text-center px-6 md:px-12 w-full">
+    <h1 className="text-7xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-green-400 leading-tight">
+    Mortgages <br className="hidden sm:block" /> made simple
+  </h1>
+    </div>
+
+      <div className="lg:mr-[600px] mt-36">
+        <div className="py-4 mt-8 flex justify-center">
           <Link href={"/start"}>
-          <button className="bg-green-400 text-black font-medium px-8 py-4 rounded-full text-lg shadow-lg
-          hover:bg-green-500 transition-all duration-300">
-            Start my approval
-          </button></Link>
+            <button className="bg-green-400 text-black font-medium px-10 py-5 rounded-full text-xl
+             shadow-lg hover:bg-green-500 transition-all duration-300
+            ">
+              Start my approval
+            </button>
+          </Link>
         </div>
-        <p className="mt-4 text-gray-200 text-sm flex items-center justify-center gap-2">
+        <p className="text-gray-200 text-base flex items-center justify-center gap-2">
           🕒 3 min | No credit impact
         </p>
       </div>
+
+      <div className="absolute right-80 bottom-64 lg:bottom-52 hidden lg:flex flex-col items-end">
+  <div className="py-4 ">
+    <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
+    <p className="text-gray-200 text-base flex items-center justify-center gap-2">4.6 Stars | 3177 Google reviews</p>
+  </div>
+</div>
+
+
     </section>
   );
 };
