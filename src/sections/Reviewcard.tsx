@@ -67,7 +67,7 @@ const ReviewSection = () => {
   {/* Right: Text and Button Section */}
   <div className="max-w-md w-full text-center md:text-left md:w-1/2 px-4 lg:mr-80">
     <h2 className="text-5xl lg:text-[68px] sm:text-5xl md:text-6xl font-semibold text-gray-900 leading-tight">
-      Find out why <br /> we’re better.
+      Find out why <br /> we&apos;re better.
     </h2>
     <button className="mt-4 bg-green-900 text-white px-6 py-3 rounded-lg text-lg md:text-xl hover:bg-green-800 transition">
       See all our stories

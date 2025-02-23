@@ -126,13 +126,13 @@ const MortgageCalculator = () => {
             debt-to-income ratio (DTI)
           </a>
           . The maximum DTI you can have in order to qualify for most mortgage loans 
-          is often between 45–50%, with your anticipated housing costs included.
+          is often between 50%, with your anticipated housing costs included.
         </p>
         <p className="text-gray-500 text-md leading-relaxed mt-4">
           Your DTI is the balance between your income and your debt. It helps lenders 
           understand how safe or risky it is for them to approve your loan. A DTI ratio 
           represents how much of your gross monthly income is spoken for by creditors, and 
-          how much of it is left over to you as disposable income. It’s most commonly written 
+          how much of it is left over to you as disposable income. It&apos;s most commonly written 
           as a percentage. For example, if you pay half your monthly income in debt payments, 
           you would have a DTI of 50%.
         </p>
@@ -157,7 +157,7 @@ const MortgageCalculator = () => {
     {/* Example Section */}
     <div className="text-center">
       <h3 className="text-xl font-semibold mb-4">
-        Here’s an example of what calculating your DTI might look like:
+        Here&apos;s an example of what calculating your DTI might look like:
       </h3>
       <div className="bg-gray-100 p-6 rounded-lg flex justify-center">
         <Image src={dtiExample} alt="DTI Example"
@@ -181,7 +181,7 @@ const MortgageCalculator = () => {
         <p className="text-gray-500 text-md leading-relaxed">
         Your monthly mortgage payment includes loan principal and interest, property taxes, homeowners insurance, and mortgage insurance (PMI),
         if applicable. While not typically included in your mortgage payment, homeowners also pay monthly utilities and sometimes pay homeowners association (HOA) fees,
-        so it’s a good idea to factor these into your monthly budget.
+        so it&apos;s a good idea to factor these into your monthly budget.
         This mortgage calculator factors in all these typical monthly costs so you can really crunch the numbers.
         </p>
 
@@ -190,7 +190,7 @@ const MortgageCalculator = () => {
         </h2>
         <p className="text-gray-500 text-md leading-relaxed mt-4">
         The easiest way to calculate your mortgage payment is to use a calculator,
-        but for the curious or mathematically inclined, here’s the formula for calculating principal and interest yourself:
+        but for the curious or mathematically inclined, here&apos;s the formula for calculating principal and interest yourself:
         </p>
       </div>
         <Image src={mortgageFormula} alt="Mortgage Formula"/>
@@ -202,7 +202,7 @@ const MortgageCalculator = () => {
           <li>r is the monthly interest rate<br/> (annual interest rate divided by 12 and expressed as a decimal)</li>
           <li>n is the total number of payments in months</li>
           </ul>
-          <p className="flex justify-center mt-4 text-start font-semibold">Here’s a simple example:</p>
+          <p className="flex justify-center mt-4 text-start font-semibold">Here&apos;s a simple example:</p>
           <div className="flex justify-center">
           
           <Image src={mortgageExample} alt="Mortgage Formula"
@@ -219,7 +219,7 @@ const MortgageCalculator = () => {
       <div className="border-t border-gray-300 my-10"></div>
       <div>
         <h2 className="text-3xl font-semibold mb-4">
-        How is Better’s mortgage calculator different?
+        How is Better&apos;s mortgage calculator different?
         </h2>
         <p className="text-gray-500 text-md leading-relaxed">
         The property taxes you contribute are used to finance the services provided by your local government to the community. 
@@ -243,7 +243,7 @@ const MortgageCalculator = () => {
          begin accruing equity, and keep cash available for future needs. This can all be calculated using this Mortgage Calculator.
          <br /><br />
          Choosing a mortgage with PMI is a popular option: 71% of first-time homebuyers had a down payment of less than 20% in July 2021.
-         In 2020, the median down payment for first-time homebuyers was just 7%, and it hasn’t risen above 10% since 1989.
+         In 2020, the median down payment for first-time homebuyers was just 7%, and it hasn&apos;t risen above 10% since 1989.
          <br /><br />
          PMI is automatically removed from conventional mortgages once your home equity reaches 22%. 
          Alternatively, you can request the removal of PMI once you've accumulated at least 20% home equity.

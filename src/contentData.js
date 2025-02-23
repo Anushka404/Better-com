@@ -26,7 +26,7 @@ const content = {
       {
         title: "Better HELOC",
         description:
-          "Introducing One Day HELOC™—your express lane to getting cash from your home with our Home Equity Line of Credit². Access up to 90% of your home equity as cash in as little as 7 days.",
+          "Introducing One Day HELOC™ your express lane to getting cash from your home with our Home Equity Line of Credit². Access up to 90% of your home equity as cash in as little as 7 days.",
         img: heloc,
         alt: "HELOC",
         type: "wide",
@@ -84,7 +84,7 @@ const content = {
       {
         title: "Buying a Home Without a Realtor",
         description:
-          "Thinking about buying a home without a realtor? Here's what you need to know.",
+          "Thinking about buying a home without a realtor? Here is what you need to know.",
         img: house,
         alt: "First-Time Homebuyer",
         type: "wide",
@@ -92,7 +92,7 @@ const content = {
       {
         title: "Timeline for homebuying process",
         description:
-          "Does the process of buying a home seem daunting? Here's a timeline to help you navigate the process.",
+          "Does the process of buying a home seem daunting? Here is a timeline to help you navigate the process.",
         img: loanTime,
         alt: "loan timeline",
         type: "wide",

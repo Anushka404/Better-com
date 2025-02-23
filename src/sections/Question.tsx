@@ -13,7 +13,7 @@ const Question = () => {
         <div className="flex flex-col sm:flex-row sm:items-start justify-between">
           {/* Heading */}
           <h2 className="text-4xl font-semibold text-gray-900 leading-tight sm:text-5xl">
-            Got questions? <br /> We've got answers
+            Got questions? <br /> We&apos;ve got answers
           </h2>
 
           {/* Buttons */}
@@ -40,7 +40,7 @@ const Question = () => {
 
         {/* Bento Boxes Container */}
         <div className="bg-green-50 mt-10 grid gap-6 md:grid-cols-3 auto-rows-fr min-h-[250px]">
-          {content[activeTab].map((item, index) => (
+        {content[activeTab as keyof typeof content].map((item, index) => (
             <div
               key={index}
               className={`relative bg-${

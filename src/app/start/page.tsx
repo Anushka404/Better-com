@@ -47,7 +47,7 @@ const page = () => {
       <section className="flex justify-between items-center max-lg:flex-col gap-10 py-7 w-full max-container">
         <div className="flex flex-1 flex-col items-center justify-center gap-10">
           <h1 className="mt-10 text-4xl text-center font-bold text-black lg:max-w-lg">
-            Hi, I'm Betsy! <br />
+            Hi, I&apos;m Betsy! <br />
             What can I help you with?
           </h1>
 
