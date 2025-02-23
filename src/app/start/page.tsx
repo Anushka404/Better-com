@@ -3,19 +3,22 @@ import React from 'react'
 import { FaHome, FaDollarSign, FaPhone } from "react-icons/fa";
 import Image from "next/image";
 import profile from "@/assets/profile.jpg";
+import Link from 'next/link';
 
 const page = () => {
   return (
     <>
-       <header className="sticky top-0 flex flex-col items-center px-8 lg:px-20 bg-white text-[#004733] pb-6">
+       <header className="sticky top-0 flex flex-col items-center px-8 lg:px-20 bg-white text-[#004733] pb-6 hidden:tra">
       
       <div className="w-full flex justify-between items-center py-4">
         
-        <div className="flex flex-col leading-tight">
-          <span className="text-xl font-bold text-green-800">Better</span>
-          <span className="text-sm text-gray-600">Mortgage</span>
+        <div className="flex flex-col leading-tight space-y-0 text-sm text-gray-600">
+          <Link href={`/`}>
+          <span className="text-xl font-bold text-green-800">Better</span><br />
+          Mortgage
+          </Link>
         </div>
-
+        
         
         <div className="flex items-center gap-2 hover:cursor-pointer">
           <FaPhone className="text-green-600 text-lg" />
